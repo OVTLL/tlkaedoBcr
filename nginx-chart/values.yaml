@@ -1,0 +1,10 @@
+# Default Values for my Helm Chart
+
+container:
+  image: nginx:latest
+  memory: "640Mi"
+  cpu: "500m"
+  
+replicaCount: 2
+environment: dev
+token: thisissecret

@@ -1,0 +1,11 @@
+apiVersion: v2
+appVersion: 1.2.4
+description: My Helm chart for Kubernetes
+keywords:
+- nginx
+maintainers:
+- email: developer
+  name: dev@local
+name: nginx
+type: application
+version: 0.1.0

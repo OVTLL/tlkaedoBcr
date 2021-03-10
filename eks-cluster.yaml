@@ -1,0 +1,17 @@
+#------------------------------------------
+# Usage
+# eksctl create cluster -f eks-cluster.yaml
+# eksctl delete cluster -f eks-cluster.yaml
+#------------------------------------------
+
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name  : apps-cluster-01
+  region: eu-central-1
+
+nodeGroups:
+  - name             : ng01
+    instanceType     : t3.small
+    desiredCapacity  : 2
